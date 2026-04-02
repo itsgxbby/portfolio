@@ -1,0 +1,224 @@
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Elyn P. Gabuya | A Graphic Designer and Video Editor based in Cebu City, Philippines.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Elyn P. Gabuya</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Graphic Designer and Video Editor based in Cebu City, Philippines.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Lanyard Project</h3>
+              <p>
+                A lanyard project I created for my class, featuring a design inspired by Information and Communication Technology (ICT).
+              </p>
+              <ul class="work__list">
+          
+              </ul>
+
+              <div class="work__links">
+  
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src=".\images\LANYARD MOCKUP.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Facebook Page Set</h3>
+              <p>
+                An anime-inspired design I created using Canva, commissioned by a client for a custom page banner and matching Facebook post set.
+              </p>
+              <ul class="work__list">
+                <li>Page Banner</li>
+                <li>Pinned Banner</li>
+                <li>Rules and Regulations</li>
+              </ul>
+
+              <div class="work__links">
+              </div>
+            </div>
+            <div class="work__image-box">
+  <img id="slide" src="./images/page1.png" class="work__image" />
+</div>
+
+<script>
+  const images = [
+    "./images/Page banner.png",
+    "./images/pinned.png",
+    "./images/rules.png"
+  ];
+
+  let index = 0;
+  const slide = document.getElementById("slide");
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    slide.src = images[index];
+  }, 2000); // changes every 2 seconds
+</script>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+    
+
+        </div>
+      </div>
+
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Hi, I’m Elyn P. Gabuya, a senior high school graduate with a passion for graphic design and video editing. I enjoy turning ideas into creative visuals and projects that are both meaningful and eye-catching. Through my designs, I aim to express my creativity and showcase my skills.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="./images/Gabuya - RESUME.pdf" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/grad.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+         Do you have a project, question, or idea in mind? I would love to hear from you. 
+    Feel free to send me a message and I will do my best to reply as soon as possible. 
+    The easiest way to reach me is via email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:itsgxbby@gmail.com" class="btn">itsgxbby@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+    
+        <li class="footer__social-link-item">
+          <a href="https://github.com/itsgxbby" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+      
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/itsgxbby/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
